@@ -1,0 +1,56 @@
+extends layout
+
+block content
+  header
+    .container
+      nav
+        .row
+          .col-5
+            a(href="#" class="social")
+              i.fab.fa-facebook
+            a(href="#" class="social")
+              i.fab.fa-twitter
+            a(href="#" class="social")
+              i.fab.fa-instagram
+          .col-7.text-right
+            a(href="#about" class="nav-item") ABOUT
+            span | 
+            a(href="#portfolio" class="nav-item") PORTFOLIO
+  section(class="hero")
+    .container
+      h1(id="logo" class="text-center animated bounceInLeft slow") Marvelend's
+      p(class="text-center animated bounce slow") 
+        strong web-development
+      div.text-center
+        a(href="#" class="social animated fadeIn" id="html5")  
+          i.fab.fa-html5
+        a(href="#" class="social animated fadeIn" id="css3")  
+          i.fab.fa-css3
+        a(href="#" class="social animated fadeIn" id="js")  
+          i.fab.fa-js
+        a(href="#" class="social animated fadeIn" id="react")  
+          i.fab.fa-react
+        a(href="#" class="social animated fadeIn" id="wordpress")  
+          i.fab.fa-wordpress        
+      a(href="#about" class="angle animated bounce infinite slow") 
+       i.fas.fa-angle-down
+  section(class="about" id="about")
+    h2.text-center ABOUT US TEAM
+    .container          
+        div.description
+          div.text-center
+            img(src="../images/instaperfil.JPG" class="profile" alt="picture of felix tineo web development of marvelend's")
+          div.text-center.code  
+            i.fab.fa-html5.social
+            i.fab.fa-css3.social
+            i.fab.fa-js.social
+            i.fab.fa-node
+            i.fab.fa-react.social
+            i.fab.fa-wordpress.social 
+          h6.text-center FELIX TINEO
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ea, neque rerum qui incidunt rem ipsa animi suscipit perspiciatis, nisi eos. Nobis, iusto! Possimus voluptate rem id?
+            br
+          a(href="#") SEE MORE!
+  footer
+    span.text-left COPYRIGHT 2018
+    span.text-right POWERED BY: FELIX TINEO 

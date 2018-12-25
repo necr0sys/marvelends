@@ -1,0 +1,178 @@
+////////////////////////////////////
+//SETUP
+////////////////////////////////////
+//colors
+$firstColor:#ffe600;
+$secondColor:hsl(52, 91%, 50%);
+$thirdColor:#E9A60C;
+$fourColor:#F1F30C;
+$fiveColor:#9AE90C;
+
+//basicColors
+$fontColor:#4b4b4d;
+$bkgColor:#f7f8f8;
+//fonts
+$fontLogo:'Satisfy', cursive;
+$headersFont:'Abril Fatface', cursive;
+$textFont:'Roboto', sans-serif;
+@function Rem($px){
+    $remSize:$px/18;
+    @return #{$remSize}rem;
+}
+html{
+    font-size: 18px;
+}
+body{
+    //background-color: $firstColor;
+    background-color: $secondColor;
+    color:$fontColor;
+    font-family: $textFont;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body, ul, ol, li{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $headersFont;
+}
+a{
+    text-decoration: none;
+}
+////////////////////////////////////
+//HEADER
+////////////////////////////////////
+header{
+    //border: 1px $secondColor solid;
+    position: absolute;
+    top:0px;
+    width: 100%;
+    nav{
+        .social:nth-child(2){
+            margin: 0rem 0.5rem;
+        }
+        padding: Rem(5);
+        .nav-item{
+            font-family: $headersFont;
+            color: $fontColor;
+            font-size: 0.8rem;
+            vertical-align: baseline;
+        }
+        .nav-item:nth-child(1){
+            margin-right: Rem(5);
+        }
+        .nav-item:nth-child(3){
+            margin-left: Rem(5);
+        }
+    }
+}
+////////////////////////////////////
+//HERO-SECTION
+////////////////////////////////////
+section.hero{
+    height: 100vh;
+    background: radial-gradient($firstColor,$secondColor);
+    border-bottom: $fontColor solid 3px;
+    #logo{
+        padding-top: 25vh;
+        font-weight: 800;
+        font-size: Rem(60);
+        //margin-bottom: Rem(5);
+        font-family: $fontLogo;
+        
+    }
+    p{
+        font-family: 'Lora', cursive;
+        font-weight: 500;
+    }
+    a.angle{
+        display: block;
+        text-align: center;
+        font-size: Rem(36);
+        color:$fontColor;
+        font-weight: 500;
+        animation-name: arrow;
+        animation-duration: 2.8s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes arrow {
+        0%{margin-top: 0px;}
+        50%{margin-top: 25px;}
+        100%{margin-top: 0px;}
+    }
+    #html5{animation-delay: 300ms;}
+    #css3{animation-delay: 450ms;}
+    #js{animation-delay: 550ms;}
+    #react{animation-delay: 650ms;}
+    #wordpress{animation-delay: 750ms;}
+}
+///////////////////////////////////
+//ABOUT
+///////////////////////////////////
+section.about{
+
+    h2{
+        border-bottom: $fontColor solid 3px;
+        padding: Rem(2);
+        margin-bottom: Rem(25);
+    }
+    .profile{
+        width: Rem(150);
+        height: Rem(150);
+        border-radius: 50%;
+        border: 3px solid $bkgColor;
+        box-shadow: 0 0 5px $fontColor; 
+    }
+    .description{
+        margin: Rem(15) 0PX;
+        //border-radius: 5px;
+        background: $fontColor;
+        color:$bkgColor;
+        text-align: justify;
+        padding: Rem(15);
+        box-shadow: 0 0 5px $fontColor, 1px 1px 2px $fontColor;
+        .code{
+            margin: Rem(15);
+        }
+        i{
+            color:$bkgColor;
+        }
+        
+        h6{
+            margin: Rem(5) 0;
+        }
+        a{
+            display: block;
+            text-align: center;
+            background: radial-gradient($firstColor,$secondColor);
+            color: $fontColor;
+        }
+    }
+}
+
+///////////////////////////////////
+//FOOTER
+///////////////////////////////////
+footer{
+    background: $fontColor;
+    color: $bkgColor;
+    font-size: Rem(12);
+    
+}
+///////////////////////////////////
+//VARIOS
+///////////////////////////////////
+.social{
+    color:$fontColor;
+    font-size: Rem(25);
+    text-decoration: none; 
+}
+.social:nth-child(odd){
+    margin: 0rem 0.5rem;
+}
+.social:hover{
+    text-decoration: none;
+}

@@ -1,0 +1,160 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: #f4d50b;
+  color: #4b4b4d;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Abril Fatface", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+header nav {
+  padding: 0.2777777778rem;
+}
+header nav .social:nth-child(2) {
+  margin: 0rem 0.5rem;
+}
+header nav .nav-item {
+  font-family: "Abril Fatface", cursive;
+  color: #4b4b4d;
+  font-size: 0.8rem;
+  vertical-align: baseline;
+}
+header nav .nav-item:nth-child(1) {
+  margin-right: 0.2777777778rem;
+}
+header nav .nav-item:nth-child(3) {
+  margin-left: 0.2777777778rem;
+}
+
+section.hero {
+  height: 100vh;
+  background: radial-gradient(#ffe600, #f4d50b);
+  border-bottom: #4b4b4d solid 3px;
+}
+section.hero #logo {
+  padding-top: 25vh;
+  font-weight: 800;
+  font-size: 3.3333333333rem;
+  font-family: "Satisfy", cursive;
+}
+section.hero p {
+  font-family: "Lora", cursive;
+  font-weight: 500;
+}
+section.hero a.angle {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  color: #4b4b4d;
+  font-weight: 500;
+  animation-name: arrow;
+  animation-duration: 2.8s;
+  animation-iteration-count: infinite;
+}
+@keyframes arrow {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 25px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+section.hero #html5 {
+  animation-delay: 300ms;
+}
+section.hero #css3 {
+  animation-delay: 450ms;
+}
+section.hero #js {
+  animation-delay: 550ms;
+}
+section.hero #react {
+  animation-delay: 650ms;
+}
+section.hero #wordpress {
+  animation-delay: 750ms;
+}
+
+section.about h2 {
+  border-bottom: #4b4b4d solid 3px;
+  padding: 0.1111111111rem;
+  margin-bottom: 1.3888888889rem;
+}
+section.about .profile {
+  width: 8.3333333333rem;
+  height: 8.3333333333rem;
+  border-radius: 50%;
+  border: 3px solid #f7f8f8;
+  box-shadow: 0 0 5px #4b4b4d;
+}
+section.about .description {
+  margin: 0.8333333333rem 0PX;
+  background: #4b4b4d;
+  color: #f7f8f8;
+  text-align: justify;
+  padding: 0.8333333333rem;
+  box-shadow: 0 0 5px #4b4b4d, 1px 1px 2px #4b4b4d;
+}
+section.about .description .code {
+  margin: 0.8333333333rem;
+}
+section.about .description i {
+  color: #f7f8f8;
+}
+section.about .description h6 {
+  margin: 0.2777777778rem 0;
+}
+section.about .description a {
+  display: block;
+  text-align: center;
+  background: radial-gradient(#ffe600, #f4d50b);
+  color: #4b4b4d;
+}
+
+footer {
+  background: #4b4b4d;
+  color: #f7f8f8;
+  font-size: 0.6666666667rem;
+}
+
+.social {
+  color: #4b4b4d;
+  font-size: 1.3888888889rem;
+  text-decoration: none;
+}
+
+.social:nth-child(odd) {
+  margin: 0rem 0.5rem;
+}
+
+.social:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
